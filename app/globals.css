@@ -157,19 +157,37 @@ nav a:hover {
 
 /* About Me */
 
-#aboutme-banner {
-  background-color: #00ff0011;
+#aboutme {
+  /* background-color: #00ff0011; */
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#aboutme > #aboutme-container {
+  margin: 0 7.5rem;
+}
+
+#aboutme > #aboutme-container > h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--yellow);
+  margin-bottom: 3rem;
+}
+
+#aboutme > #aboutme-container > #text-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
 }
 
 /* Projects Banner */
 
-#projects-banner {
-  background-color: #0000ff11;
+#projects {
+  /* background-color: #0000ff11; */
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -177,15 +195,97 @@ nav a:hover {
   align-items: center;
 }
 
+#projects > #project-container {
+  width: 80vw;
+}
+
+#projects > #project-container > h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--yellow);
+  margin-bottom: 3rem;
+}
+
+#projects > #project-container > #card-carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5rem;
+  align-items: center;
+  gap: 5rem;
+}
+
+#projects > #project-container > #card-carousel > .card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  justify-content: space-around;
+  border: 2px solid black;
+  border-radius: 18px;
+  background: var(--too-light-yellow);
+  cursor: pointer;
+}
+
+#projects > #project-container > #card-carousel > .card  > h2 {
+  color: var(--dark-blue);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
 /* Contact Me Banner */
 
-#contactme-banner {
-  background-color: #ff00ff11;
+#contactme {
+  /* background-color: #ff00ff11; */
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#contactme > #contactme-container {
+  width: 80vw;
+}
+
+#contactme > #contactme-container > h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--yellow);
+  margin-bottom: 3rem;
+}
+
+#contactme > #contactme-container > #temp-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+#contactme > #contactme-container > #temp-container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 50%;
+}
+
+#contactme > #contactme-container > #temp-container > form  > input,
+#contactme > #contactme-container > #temp-container > form  > textarea
+ {
+  width: 40vw;
+  padding: .75rem;
+  border: 1px solid black;
+  border-radius: 12px;
+  background: var(--too-light-yellow);
+}
+
+#contactme > #contactme-container > #temp-container > form  > button {
+  border: 1px solid black;
+  padding: .5rem 2rem;
+  border-radius: 12px;
+  background-color: var(--yellow);
+  cursor: pointer;
+  width: 8rem;
 }
 
 /* Footer */

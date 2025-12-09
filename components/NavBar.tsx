@@ -6,9 +6,9 @@ export default function NavBar() {
     <nav>
         <span id="nav-title">Vatsal Sejpal</span>
         <ul id='nav-links'>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact Me</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contactme">Contact Me</a></li>
         </ul>
         <ul id='social-links'>
           <li><a href="#"><FaInstagram /></a></li>
