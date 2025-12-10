@@ -191,8 +191,39 @@ nav a:hover {
   gap: 3rem;
 }
 
-#aboutme > #aboutme-container > #text-section > span {
+#aboutme > #aboutme-container > #text-section > span,
+#aboutme > #aboutme-container > #text-section > div {
   width: 40vw;
+}
+
+#skills-container > h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+#skills-container > ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: .5rem;
+  column-gap: 3rem;
+}
+
+#skills-container > ul > li {
+  background-color: var(--yellow);
+  min-width: 5rem;
+  display: inline-block;
+  text-align: center;
+  height: 2rem;
+  border-radius: 2.3rem;
+  line-height: 2rem;
+  color: var(--dark-brown);
+  font-weight: 600;
 }
 
 /* Projects Banner */
@@ -237,7 +268,8 @@ nav a:hover {
   border-radius: 18px;
   background: var(--too-light-yellow);
   cursor: pointer;
-  box-shadow: 16px 16px 0px var(--yellow), inset 16px 16px 0px var(--light-yellow);
+  box-shadow: 16px 16px 0px var(--yellow),
+    inset 16px 16px 0px var(--light-yellow);
   transition: transform 0.15s ease, box-shadow 0.5s ease;
 }
 
