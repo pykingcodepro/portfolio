@@ -344,20 +344,6 @@ nav a:hover {
   box-shadow: none;
 }
 
-/* Footer */
-
-#footer-container {
-  background-color: black;
-  color: white;
-  width: 100vw;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  animation: slideUpFade 800ms ease-out 2000ms both;
-}
-
 /* Page sections slideUpFade animations */
 
 @keyframes slideUpFade {
@@ -734,11 +720,6 @@ nav a:hover {
     padding: 0.6rem 1rem;
     font-size: 14px;
   }
-
-  #footer-container {
-    height: 8vh;
-    font-size: 0.9rem;
-  }
 }
 
 /* Responsive Design - Small Mobile (below 480px) */
@@ -834,10 +815,5 @@ nav a:hover {
   #contactme > #contactme-container > #temp-container > form > button {
     padding: 0.5rem 0.8rem;
     font-size: 13px;
-  }
-
-  #footer-container {
-    height: 7vh;
-    font-size: 0.8rem;
   }
 }
