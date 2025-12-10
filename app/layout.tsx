@@ -1,4 +1,6 @@
 import "./globals.css";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import '@/components/BootstrapClient.tsx';
 
 export default function RootLayout({
   children,

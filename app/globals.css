@@ -13,6 +13,7 @@
 body {
   background: var(--light-yellow);
   overflow-x: hidden;
+  font-family: var(--poppins);
 }
 
 nav {
@@ -462,3 +463,381 @@ nav a:hover {
 #contactme > #contactme-container > #temp-container > form > input:nth-of-type(2) { animation-delay: 600ms; }
 #contactme > #contactme-container > #temp-container > form > textarea { animation-delay: 700ms; }
 #contactme > #contactme-container > #temp-container > form > button { animation-delay: 800ms; }
+
+/* Responsive Design - Tablet (768px to 1024px) */
+
+@media (max-width: 1024px) {
+  nav {
+    height: 12vh;
+  }
+
+  nav > #nav-title {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+  }
+
+  nav > #nav-links {
+    width: 25vw;
+    font-size: 0.9rem;
+  }
+
+  nav > #social-links {
+    width: 12vw;
+    font-size: 1.2rem;
+    margin-right: 1.5rem;
+  }
+
+  #main-banner {
+    height: 80vh;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #main-banner > #text-section,
+  #main-banner > #image-section {
+    width: 100%;
+    height: auto;
+  }
+
+  #main-banner > #text-section > #temp-container > h1 {
+    font-size: 3rem;
+  }
+
+  #main-banner > #text-section > #temp-container > h2 {
+    font-size: 1.5rem;
+  }
+
+  #aboutme > #aboutme-container {
+    width: 90vw;
+  }
+
+  #aboutme > #aboutme-container > h1 {
+    font-size: 3rem;
+  }
+
+  #aboutme > #aboutme-container > #text-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #aboutme > #aboutme-container > #text-section > span,
+  #aboutme > #aboutme-container > #text-section > div {
+    width: 100%;
+  }
+
+  #projects > #project-container {
+    width: 90vw;
+  }
+
+  #projects > #project-container > h1 {
+    font-size: 3rem;
+  }
+
+  #projects > #project-container > #card-carousel {
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem;
+  }
+
+  #projects > #project-container > #card-carousel > .card {
+    width: 250px;
+    height: 220px;
+  }
+
+  #contactme > #contactme-container {
+    width: 90vw;
+  }
+
+  #contactme > #contactme-container > h1 {
+    font-size: 3rem;
+  }
+
+  #contactme > #contactme-container > #temp-container {
+    flex-direction: column;
+  }
+
+  #contactme > #contactme-container > #temp-container > form {
+    width: 100%;
+  }
+
+  #contactme > #contactme-container > #temp-container > form > input,
+  #contactme > #contactme-container > #temp-container > form > textarea {
+    width: 100%;
+  }
+
+  #skills-container > ul {
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+  }
+}
+
+/* Responsive Design - Mobile (480px to 768px) */
+
+@media (max-width: 768px) {
+  nav {
+    min-height: 10vh;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+  }
+
+  nav > #nav-title {
+    display: inline-block;
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+
+  nav > #nav-links {
+    width: 100%;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    justify-content: space-around;
+  }
+
+  nav > #social-links {
+    width: 100%;
+    font-size: 1rem;
+    margin-right: 0;
+    margin-top: 0.5rem;
+    justify-content: space-around;
+  }
+
+  #main-banner {
+    height: auto;
+    min-height: 50vh;
+    padding: 2rem 0;
+  }
+
+  #main-banner > #text-section > #temp-container > h1 {
+    font-size: 2rem;
+  }
+
+  #main-banner > #text-section > #temp-container > h2 {
+    font-size: 1rem;
+  }
+
+  #main-banner > #text-section > #temp-container > button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  #main-banner > #image-section {
+    margin-top: 1rem;
+  }
+
+  #main-banner > #image-section img {
+    width: 80%;
+    height: auto;
+  }
+
+  #aboutme {
+    height: auto;
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+
+  #aboutme > #aboutme-container {
+    width: 95vw;
+  }
+
+  #aboutme > #aboutme-container > h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #aboutme > #aboutme-container > #text-section > span {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  #skills-container > h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  #skills-container > ul {
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+    row-gap: 0.4rem;
+  }
+
+  #skills-container > ul > li {
+    min-width: 4rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    font-size: 0.85rem;
+  }
+
+  #projects {
+    height: auto;
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+
+  #projects > #project-container {
+    width: 95vw;
+  }
+
+  #projects > #project-container > h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #projects > #project-container > #card-carousel {
+    flex-direction: column;
+    margin: 1rem;
+    gap: 1.5rem;
+  }
+
+  #projects > #project-container > #card-carousel > .card {
+    width: 280px;
+    height: 240px;
+  }
+
+  #projects > #project-container > #card-carousel > .card > h2 {
+    font-size: 1.1rem;
+  }
+
+  #contactme {
+    height: auto;
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+
+  #contactme > #contactme-container {
+    width: 95vw;
+  }
+
+  #contactme > #contactme-container > h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #contactme > #contactme-container > #temp-container {
+    flex-direction: column;
+  }
+
+  #contactme > #contactme-container > #temp-container > form {
+    width: 100%;
+  }
+
+  #contactme > #contactme-container > #temp-container > form > input,
+  #contactme > #contactme-container > #temp-container > form > textarea {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 14px;
+  }
+
+  #contactme > #contactme-container > #temp-container > form > button {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    font-size: 14px;
+  }
+
+  #footer-container {
+    height: 8vh;
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive Design - Small Mobile (below 480px) */
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 14px;
+  }
+
+  nav {
+    height: 12vh;
+  }
+
+  nav > #nav-title {
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+
+  nav > #nav-links {
+    font-size: 1rem;
+  }
+
+  nav > #social-links {
+    font-size: 1.5rem;
+  }
+
+  #main-banner > #text-section > #temp-container > h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #main-banner > #text-section > #temp-container > h2 {
+    font-size: 1rem;
+  }
+
+  #main-banner > #text-section > #temp-container > button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  #aboutme > #aboutme-container,
+  #projects > #project-container,
+  #contactme > #contactme-container
+   {
+    width: 80vw;
+  }
+
+  #aboutme > #aboutme-container > h1,
+  #projects > #project-container > h1,
+  #contactme > #contactme-container > h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #aboutme > #aboutme-container > #text-section > span {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  #skills-container > h2 {
+    font-size: 1rem;
+  }
+
+  #skills-container > ul {
+    grid-template-columns: auto auto;
+    column-gap: 0.8rem;
+    row-gap: 0.3rem;
+  }
+
+  #skills-container > ul > li {
+    min-width: 3.5rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    font-size: 0.75rem;
+  }
+
+  #projects > #project-container > #card-carousel > .card {
+    width: 240px;
+    height: 220px;
+  }
+
+  #projects > #project-container > #card-carousel > .card > h2 {
+    font-size: 1rem;
+  }
+
+  #contactme > #contactme-container > #temp-container > form > input,
+  #contactme > #contactme-container > #temp-container > form > textarea {
+    padding: 0.5rem;
+    font-size: 13px;
+  }
+
+  #contactme > #contactme-container > #temp-container > form > button {
+    padding: 0.5rem 0.8rem;
+    font-size: 13px;
+  }
+
+  #footer-container {
+    height: 7vh;
+    font-size: 0.8rem;
+  }
+}
