@@ -9,7 +9,7 @@ export default function AboutMe() {
         <h1>about me.</h1>
         <div id="text-section">
           <span>
-            Hi, I'm Vatsal — a web developer passionate about building clean,
+            Hi, I'm Vatsal, a web developer, passionate about building clean,
             responsive, and user-friendly websites. I enjoy turning ideas into
             real projects using modern web technologies. <br />
             <br />

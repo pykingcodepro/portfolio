@@ -353,4 +353,112 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  animation: slideUpFade 800ms ease-out 2000ms both;
 }
+
+/* Page sections slideUpFade animations */
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MainBanner animation */
+#main-banner {
+  opacity: 0;
+  animation: slideUpFade 800ms ease-out 200ms both;
+}
+
+/* AboutMe animation */
+#aboutme {
+  opacity: 0;
+  animation: slideUpFade 800ms ease-out 200ms both;
+}
+
+#aboutme > #aboutme-container > h1 {
+  opacity: 0;
+  animation: slideUpFade 600ms ease-out 300ms both;
+}
+
+#aboutme > #aboutme-container > #text-section > span {
+  opacity: 0;
+  animation: slideUpFade 600ms ease-out 500ms both;
+}
+
+#aboutme > #aboutme-container > #text-section > div {
+  opacity: 0;
+  animation: slideUpFade 600ms ease-out 700ms both;
+}
+
+#skills-container > h2 {
+  opacity: 0;
+  animation: slideUpFade 500ms ease-out 800ms both;
+}
+
+#skills-container > ul > li {
+  opacity: 0;
+  animation: slideUpFade 500ms ease-out both;
+}
+
+#skills-container:nth-of-type(1) > ul > li:nth-child(1) { animation-delay: 900ms; }
+#skills-container:nth-of-type(1) > ul > li:nth-child(2) { animation-delay: 950ms; }
+#skills-container:nth-of-type(1) > ul > li:nth-child(3) { animation-delay: 1000ms; }
+#skills-container:nth-of-type(1) > ul > li:nth-child(4) { animation-delay: 1050ms; }
+#skills-container:nth-of-type(1) > ul > li:nth-child(5) { animation-delay: 1100ms; }
+#skills-container:nth-of-type(1) > ul > li:nth-child(6) { animation-delay: 1150ms; }
+#skills-container:nth-of-type(1) > ul > li:nth-child(7) { animation-delay: 1200ms; }
+#skills-container:nth-of-type(1) > ul > li:nth-child(8) { animation-delay: 1250ms; }
+
+#skills-container:nth-of-type(2) > ul > li:nth-child(1) { animation-delay: 1300ms; }
+#skills-container:nth-of-type(2) > ul > li:nth-child(2) { animation-delay: 1350ms; }
+#skills-container:nth-of-type(2) > ul > li:nth-child(3) { animation-delay: 1400ms; }
+
+/* Projects animation */
+#projects {
+  opacity: 0;
+  animation: slideUpFade 800ms ease-out 200ms both;
+}
+
+#projects > #project-container > h1 {
+  opacity: 0;
+  animation: slideUpFade 600ms ease-out 300ms both;
+}
+
+.card {
+  opacity: 0;
+  animation: slideUpFade 600ms ease-out both;
+}
+
+#projects > #project-container > #card-carousel > .card:nth-child(1) { animation-delay: 500ms; }
+#projects > #project-container > #card-carousel > .card:nth-child(2) { animation-delay: 700ms; }
+#projects > #project-container > #card-carousel > .card:nth-child(3) { animation-delay: 900ms; }
+
+/* ContactMe animation */
+#contactme {
+  opacity: 0;
+  animation: slideUpFade 800ms ease-out 200ms both;
+}
+
+#contactme > #contactme-container > h1 {
+  opacity: 0;
+  animation: slideUpFade 600ms ease-out 300ms both;
+}
+
+#contactme > #contactme-container > #temp-container > form > input,
+#contactme > #contactme-container > #temp-container > form > textarea,
+#contactme > #contactme-container > #temp-container > form > button {
+  opacity: 0;
+  animation: slideUpFade 500ms ease-out both;
+}
+
+#contactme > #contactme-container > #temp-container > form > input:nth-of-type(1) { animation-delay: 500ms; }
+#contactme > #contactme-container > #temp-container > form > input:nth-of-type(2) { animation-delay: 600ms; }
+#contactme > #contactme-container > #temp-container > form > textarea { animation-delay: 700ms; }
+#contactme > #contactme-container > #temp-container > form > button { animation-delay: 800ms; }
