@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
 
 :root {
-  --light-yellow: #FBF8CC;
-  --yellow: #F5EE84;
-  --too-light-yellow: #F7F197;
-  --dark-blue: #03045E;
+  --light-yellow: #fbf8cc;
+  --yellow: #f5ee84;
+  --too-light-yellow: #f7f197;
+  --dark-blue: #03045e;
   --dark-brown: #474306;
   --poppins: "Poppins", sans-serif;
 }
@@ -77,31 +77,30 @@ nav > #social-links li {
   animation: slideFadeUp 600ms ease-out both;
 }
 
-nav > #nav-links li:nth-child(1) { 
-  animation-delay: 220ms; 
+nav > #nav-links li:nth-child(1) {
+  animation-delay: 220ms;
 }
-nav > #nav-links li:nth-child(2) { 
-  animation-delay: 320ms; 
+nav > #nav-links li:nth-child(2) {
+  animation-delay: 320ms;
 }
-nav > #nav-links li:nth-child(3) { 
-  animation-delay: 420ms; 
-}
-
-nav > #social-links li:nth-child(1) { 
-  animation-delay: 280ms; 
-}
-nav > #social-links li:nth-child(2) { 
-  animation-delay: 360ms; 
-}
-nav > #social-links li:nth-child(3) { 
-  animation-delay: 440ms; 
+nav > #nav-links li:nth-child(3) {
+  animation-delay: 420ms;
 }
 
+nav > #social-links li:nth-child(1) {
+  animation-delay: 280ms;
+}
+nav > #social-links li:nth-child(2) {
+  animation-delay: 360ms;
+}
+nav > #social-links li:nth-child(3) {
+  animation-delay: 440ms;
+}
 
 nav a {
   transition: transform 160ms ease, color 160ms ease;
 }
-nav a:hover { 
+nav a:hover {
   transform: translateY(-3px);
 }
 
@@ -139,13 +138,21 @@ nav a:hover {
 }
 
 #main-banner > #text-section > #temp-container > button {
-  border: 1px solid black;
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  background-color: var(--yellow);
+  background: var(--yellow);
+  border: 2px solid var(--dark-brown);
+  padding: 14px 32px;
+  border-radius: 14px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--dark-brown);
   cursor: pointer;
+  box-shadow: 8px 8px 0px var(--yellow), inset 8px 8px 0px var(--light-yellow);
+  transition: transform 0.15s ease, box-shadow 0.5s ease;
 }
 
+#main-banner > #text-section > #temp-container > button:hover {
+  box-shadow: none;
+}
 
 #main-banner > #image-section {
   width: 50vw;
@@ -167,7 +174,7 @@ nav a:hover {
 }
 
 #aboutme > #aboutme-container {
-  margin: 0 7.5rem;
+  width: 80vw;
 }
 
 #aboutme > #aboutme-container > h1 {
@@ -182,6 +189,10 @@ nav a:hover {
   flex-direction: row;
   justify-content: space-between;
   gap: 3rem;
+}
+
+#aboutme > #aboutme-container > #text-section > span {
+  width: 40vw;
 }
 
 /* Projects Banner */
@@ -226,9 +237,15 @@ nav a:hover {
   border-radius: 18px;
   background: var(--too-light-yellow);
   cursor: pointer;
+  box-shadow: 16px 16px 0px var(--yellow), inset 16px 16px 0px var(--light-yellow);
+  transition: transform 0.15s ease, box-shadow 0.5s ease;
 }
 
-#projects > #project-container > #card-carousel > .card  > h2 {
+#projects > #project-container > #card-carousel > .card:hover {
+  box-shadow: none;
+}
+
+#projects > #project-container > #card-carousel > .card > h2 {
   color: var(--dark-blue);
   font-weight: 600;
   font-size: 1.3rem;
@@ -259,7 +276,6 @@ nav a:hover {
 #contactme > #contactme-container > #temp-container {
   display: flex;
   flex-direction: row;
-
 }
 
 #contactme > #contactme-container > #temp-container > form {
@@ -269,23 +285,30 @@ nav a:hover {
   width: 50%;
 }
 
-#contactme > #contactme-container > #temp-container > form  > input,
-#contactme > #contactme-container > #temp-container > form  > textarea
- {
+#contactme > #contactme-container > #temp-container > form > input,
+#contactme > #contactme-container > #temp-container > form > textarea {
   width: 40vw;
-  padding: .75rem;
+  padding: 0.75rem;
   border: 1px solid black;
   border-radius: 12px;
   background: var(--too-light-yellow);
 }
 
-#contactme > #contactme-container > #temp-container > form  > button {
-  border: 1px solid black;
-  padding: .5rem 2rem;
+#contactme > #contactme-container > #temp-container > form > button {
+  border: 2px solid var(--dark-brown);
+  padding: 0.5rem 2rem;
   border-radius: 12px;
   background-color: var(--yellow);
   cursor: pointer;
+  color: var(--dark-brown);
+  font-weight: 500;
+  transition: transform 0.15s ease, box-shadow 0.5s ease;
   width: 8rem;
+  box-shadow: 8px 8px 0px var(--yellow), inset 8px 8px 0px var(--light-yellow);
+}
+
+#contactme > #contactme-container > #temp-container > form > button:hover {
+  box-shadow: none;
 }
 
 /* Footer */
