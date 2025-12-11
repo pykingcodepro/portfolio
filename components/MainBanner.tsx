@@ -8,7 +8,7 @@ export default function MainBanner() {
     <div id="main-banner">
       <div id="text-section">
         <div id="temp-container">
-          <h2>I'm just another...</h2>
+          <h2>Not just another...</h2>
         <h1>Web Developer</h1>
         <button type="button" onClick={(e) => (location.href = "#contactme")}>
           My Resume

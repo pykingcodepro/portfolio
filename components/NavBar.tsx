@@ -29,9 +29,9 @@ export default function NavBar() {
           <li><a href="#contactme">Contact Me</a></li>
         </ul>
         <ul id='social-links' className={isOpen ? 'nav-menu-open' : 'nav-menu'}>
-          <li><a href="#"><FaInstagram /></a></li>
-          <li><a href="#"><FaLinkedin /></a></li>
-          <li><a href="#"><FaGithub /></a></li>
+          <li><a href="https://www.instagram.com/pyking45" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></li>
+          <li><a href="https://www.linkedin.com/in/vatsal-sejpal-1878b4317/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a></li>
+          <li><a href="https://www.github.com/pykingcodepro" target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>
         </ul>
     </nav>
   )
