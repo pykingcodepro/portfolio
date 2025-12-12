@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react'
+import React, { FormEvent, useState } from 'react'
 import { FaAt, FaPhoneAlt } from 'react-icons/fa'
 
 export default function ContactMe() {
@@ -9,7 +9,8 @@ export default function ContactMe() {
   const [email, setEmail] = useState<string>("")
   const [msg, setMsg] = useState<string>("")
 
-  const handleSend = async() => {
+  const handleSend = async(e:FormEvent) => {
+    e.preventDefault();
     if (name === "" || email === "" || msg === ""){
       alert("Fill all the fields.");
       return;
