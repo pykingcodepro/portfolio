@@ -1,6 +1,6 @@
 'use client';
 
-import React from "react";
+import React, { createElement } from "react";
 import Image from "next/image";
 
 export default function MainBanner() {
@@ -10,7 +10,12 @@ export default function MainBanner() {
         <div id="temp-container">
           <h2>Not just another...</h2>
         <h1>Web Developer</h1>
-        <button type="button" onClick={(e) => (location.href = "#contactme")}>
+        <button type="button" onClick={(e) => {
+          const link = document.createElement("a");
+          link.href = "/Resume.pdf";
+          link.download = "Resume.pdf";
+          link.click();
+        }}>
           My Resume
         </button>
         </div>
