@@ -1,17 +1,12 @@
 [
     {
-        "name": "Project I",
-        "link": "https://www.google.com/",
-        "img": "web.png"
+        "name": "YetToDo",
+        "link": "https://www.github.com/pykingcodepro/yet-to-do/",
+        "img": "yettodo.png"
     },
     {
-        "name": "Project II",
-        "link": "https://www.google.com/",
-        "img": "web.png"
-    },
-    {
-        "name": "Project III",
-        "link": "https://www.google.com/",
-        "img": "web.png"
+        "name": "GoodBudget",
+        "link": "https://goodbudget-kappa.vercel.app/",
+        "img": "goodbudget.png"
     }
 ]
